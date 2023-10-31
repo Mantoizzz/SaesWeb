@@ -4,7 +4,8 @@
 
 ### 基础加密解密
 
-![image-20231031212944792](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031212944792.png)
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/c7cb1869-e12b-4215-bcf0-ecda9a6ecc2f)
+
 
 ![image-20231031212956590](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031212956590.png)
 
