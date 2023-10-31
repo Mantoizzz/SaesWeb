@@ -7,25 +7,32 @@
 ![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/c7cb1869-e12b-4215-bcf0-ecda9a6ecc2f)
 
 
-![image-20231031212956590](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031212956590.png)
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/db1b01f0-5a89-472e-9e24-601764c68aa5)
+
 
 ### ASCII
 
-![image-20231031213023644](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031213023644.png)
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/caa8a0e5-9b40-477e-ba27-b71bcc797e52)
 
-![image-20231031213034067](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031213034067.png)
+
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/eaf11b89-c60a-4dba-9c2a-349b73bc79c3)
+
 
 ### 二重加密
 
-![image-20231031213159223](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031213159223.png)
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/4b876b82-eca0-46a0-9c4b-5d260635724f)
 
-![image-20231031213209795](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031213209795.png)
+
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/a67ae728-5fbc-4083-bf17-153779611a3f)
+
 
 ### 三重加密
 
-![image-20231031213255972](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031213255972.png)
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/7dcc801f-5bde-4e8d-86b5-6072c20de4bb)
 
-![image-20231031213309703](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031213309703.png)
+
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/44e46464-7584-469b-8096-67dbea4d291d)
+
 
 ### 中间相遇攻击
 
@@ -77,7 +84,8 @@
     }
 ```
 
-![image-20231031212854717](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20231031212854717.png)
+![image](https://github.com/Mantoizzz/SaesWeb/assets/116716120/6b19aa28-8140-4299-be12-0a35b099111f)
+
 
 ## 用户指南
 
