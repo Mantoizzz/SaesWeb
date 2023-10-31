@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #response {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>二重加密Page</h1>
+<form method="post" id="myForm" th:object="${request}" th:action="@{/double}">
+    <label>
+        <input type="text" name="text" th:field="*{text}" required="required" placeholder="请输入16位二进制数">
+    </label>
+    <br>
+    <label>
+        <input type="text" name="keyA" th:field="*{keyA}" required="required"
+               placeholder="请输入十六位二进制数作为密钥A">
+    </label>
+    <br>
+    <label>
+        <input type="text" name="keyB" th:field="*{keyB}" required="required"
+               placeholder="请输入十六位二进制数作为密钥B">
+    </label>
+    <br>
+    <input id="encrypt" type="checkbox" th:field="*{isEncrypt}"> <label for="encrypt">打勾为解密，默认为加密</label>
+</form>
+
+<button id="submit">提交</button>
+
+<div id="response">
+
+</div>
+</body>
+<script>
+    document.getElementById('submit').addEventListener('click', function () {
+        // 获取表单元素
+        const form = document.getElementById('myForm');
+
+        // 创建一个空的JSON对象
+        const formData = {};
+
+        // 遍历表单中的所有表单字段
+        for (let i = 0; i < form.elements.length; i++) {
+            const field = form.elements[i];
+
+            // 忽略非表单字段
+            if (!field.name) continue;
+
+            // 对于复选框，检查是否被选中，设置布尔值为true或false
+            if (field.type === 'checkbox') {
+                formData[field.name] = field.checked;
+            } else {
+                // 对于其他字段，将字段的名称和值添加到JSON对象
+                formData[field.name] = field.value;
+            }
+        }
+
+        // 将JSON对象转化为JSON字符串
+        const jsonData = JSON.stringify(formData);
+
+        // 发送POST请求
+        fetch('/double', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: jsonData,
+        })
+            .then(response => response.json())
+            .then(data => {
+                const responseContainer = document.getElementById('response');
+
+                // 根据响应数据的结构，格式化要显示的内容
+                // 设置<div>元素的内容
+                responseContainer.innerHTML = `结果: ${data.text}`;
+            })
+            .catch(error => {
+                console.error('请求失败:', error);
+            });
+    });
+</script>
+</html>
